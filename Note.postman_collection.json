@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "14b2ba8c-eaa4-425e-b55a-76572fabfff2",
+		"name": "Note",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get NOte",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/note/628dad80aee82c4e5acb628c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"note",
+						"628dad80aee82c4e5acb628c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"note_title\": \"noat mas\",\r\n    \"color\": \"FFF\",\r\n    \"note_content\": \"khaskdashdsd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/note/save",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"note",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Note",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/note/delete/628dc06d5025f2796bb83c80",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"note",
+						"delete",
+						"628dc06d5025f2796bb83c80"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update note",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"note_title\": \"testing 001\",\r\n    \"color\": \"F99A9C\",\r\n    \"note_content\": \"tessting contenr note\",\r\n    \"image\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/note/update/628dbf81f134b517a3dea2e7",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"note",
+						"update",
+						"628dbf81f134b517a3dea2e7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Note image",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/note/delete-image/628dad80aee82c4e5acb628c/628dad80aee82c4e5acb628d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"note",
+						"delete-image",
+						"628dad80aee82c4e5acb628c",
+						"628dad80aee82c4e5acb628d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Note image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"628dc1c55025f2796bb83c89\",\r\n    \"imageNoteId\": \"628dc1c55025f2796bb83c8a\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/note/delete-image/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"note",
+						"delete-image",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update image",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image\": [\r\n        {\r\n            \"image_title\": \"hinh thu nghiem\",\r\n            \"image_url\": \"https://icdn.dantri.com.vn/thumb_w/640/2018/5/23/net-cuoi-be-gai-9-1527053440039156820618.jpg\",\r\n            \"image_caption\": \"hinhf anh ve mot co be nhin o dau do\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/note/update-image/id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"note",
+						"update-image",
+						"id"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
