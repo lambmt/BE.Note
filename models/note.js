@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 
 
-//note schema
-
 const Note = mongoose.model('Note', {
     note_title: {
         type: String,
@@ -12,12 +10,11 @@ const Note = mongoose.model('Note', {
         type: String,
         require: true
     },
-    note_content: {
-        content: {
-            type: String,
-            require: false
-        },
-        image: {
+    note_content: [
+        { type: String }
+    ],
+    image: [
+        {
             image_id: {
                 type: Number,
                 require: false
@@ -35,7 +32,10 @@ const Note = mongoose.model('Note', {
                 require: false
             }
         }
-    }
+
+    ]
+
+
 });
 
 
